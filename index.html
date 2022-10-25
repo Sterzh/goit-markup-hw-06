@@ -424,6 +424,40 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+        <form class="order-form">
+          <div class="form-block">
+            <label class="lable-name" for="name">Ім'я</label>
+            <input class="input-form" type="text" name="username" id="name" autofocus />
+          </div>
+          <div class="form-block">
+            <label class="lable-name" for="phone">Телефон</label>
+            <input class="input-form" type="tel" name="phone" id="phone" />
+          </div>
+
+          <div class="form-block">
+            <label class="lable-name" for="mail">Пошта</label>
+            <input class="input-form" type="email" name="email" id="mail" />
+          </div>
+
+          <div class="form-block">
+            <label class="lable-name" for="comments">Коментар</label>
+            <textarea
+              class="comments-form"
+              name="comments"
+              id="comments"
+              placeholder="Введіть текст"
+            ></textarea>
+          </div>
+          <div class="consent-block">
+            <input type="checkbox" name="user-consent" />
+            <p class="consent-text">
+              Погоджуюся з розсилкою та приймаю <a class="consent-link" href="#">Умови договору</a>
+            </p>
+          </div>
+
+          <button class="submit-button" type="submit">Відправити</button>
+        </form>
         <button class="modal-close-button" type="button" data-modal-close>
           <svg class="modal-close-icon" width="18px" height="18px">
             <use href="./images/icon/symbol-defs.svg#icon-close-black"></use>
