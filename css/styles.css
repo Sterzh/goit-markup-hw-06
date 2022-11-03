@@ -642,14 +642,13 @@ img {
   border-color: var(--social-icon-white-color);
 }
 
+/* footer-subscription */
+
 .footer-subscription-block {
-  position: relative;
   margin-left: 93px;
-  width: 570px;
-  height: 86px;
 }
 
-.foter-subscription-label {
+.footer-subscription-text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -659,19 +658,23 @@ img {
   margin-bottom: 20px;
 }
 
-.input-form-subscription {
-  position: absolute;
-  left: 0;
-  bottom: 0;
+.subscription-form {
+  display: flex;
+}
+
+.footer-subscription-input {
   width: 358px;
   height: 50px;
-  padding: 15px 16px;
+  padding-left: 15px;
+  padding-right: 15px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
+  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  background-color: transparent;
+  background-color: inherit;
   outline: none;
+  margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -680,36 +683,23 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-form-subscription:hover,
-.input-form-subscription:focus {
+.footer-subscription-input:hover,
+.foter-subscription-input:focus {
   border-color: var(--accent-color);
   cursor: pointer;
 }
 
-.footer-subscription-block input::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.button-div {
+.footer-subscription-button {
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-.submit-subscription-button {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  justify-content: center;
+  padding: 0;
   width: 200px;
   height: 50px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  padding: 0;
+  letter-spacing: 0.06em;
   color: var(--text-color-white);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -717,12 +707,16 @@ img {
   border: 0;
   border-color: unset;
   cursor: pointer;
-  fill: currentColor;
 }
 
-.subscription-icon-footer {
+.footer-subscription-button:hover,
+.footer-subscription-button:focus {
+  background-color: var(--accent-color-background);
+}
+
+.subscription-button-icon {
+  margin-left: 12px;
   fill: currentColor;
-  margin-left: 10px;
 }
 
 /* Portfolio */
@@ -943,6 +937,7 @@ img {
 }
 
 .lable-name {
+  display: block;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -1111,4 +1106,12 @@ img {
   border: 0;
   border-color: unset;
   cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submit-button:hover,
+.submit-button:focus {
+  background-color: var(--accent-color-background);
 }

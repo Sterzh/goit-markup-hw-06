@@ -421,25 +421,20 @@
         </div>
 
         <div class="footer-subscription-block">
-          <form action="subscription-form">
-            <label class="foter-subscription-label" for="subscription-mail"
-              >Підпишіться на розсилку</label
-            >
+          <p class="footer-subscription-text">Підпишіться на розсилку</p>
+          <form class="subscription-form">
             <input
-              class="input-form-subscription"
+              class="footer-subscription-input"
               type="email"
               name="mail"
               id="subscription-mail"
               placeholder="E-mail"
             />
-
-            <button class="submit-subscription-button" type="submit">
-              <span class="button-div">
-                Відправити
-                <svg class="subscription-icon-footer" width="24px" height="24px">
-                  <use href="./images/icon/symbol-defs.svg#icon-send"></use>
-                </svg>
-              </span>
+            <button class="footer-subscription-button" type="submit">
+              Підписатися
+              <svg class="subscription-button-icon" width="24px" height="24px">
+                <use href="./images/icon/symbol-defs.svg#icon-send"></use>
+              </svg>
             </button>
           </form>
         </div>
@@ -453,7 +448,7 @@
             <use href="./images/icon/symbol-defs.svg#icon-close-black"></use>
           </svg>
         </button>
-        <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
         <form class="order-form">
           <label class="lable-name" for="name">Ім'я</label>
           <div class="form-block">
@@ -496,13 +491,7 @@
               >Погоджуюся з розсилкою та приймаю
               <a class="terms-link" href="#">Умови договору</a></label
             >
-            <!-- <svg class="terms-icon" width="16px" height="15px">
-              <use href="./images/icon/symbol-defs.svg#icon-check"></use>
-            </svg> -->
           </div>
-
-          <!-- <input id="terms-checkbox" type="checkbox" name="terms-checkbox" /> -->
-
           <button class="submit-button" type="submit">Відправити</button>
         </form>
       </div>
