@@ -60,6 +60,14 @@ img {
   margin: -1px;
 }
 
+.mb0 {
+  margin-bottom: 0;
+}
+
+.list {
+  list-style: none;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -84,10 +92,6 @@ img {
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid var(--border-portfolio-header);
-}
-
-.mb0 {
-  margin-bottom: 0;
 }
 
 .header {
@@ -118,10 +122,6 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-}
-
-.list {
-  list-style: none;
 }
 
 /* site-nav list*/
